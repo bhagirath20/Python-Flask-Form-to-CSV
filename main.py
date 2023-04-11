@@ -7,9 +7,9 @@ try:
         print('Requirements isn\'t installed, installing now.')
         ret_code = os.system('pip3 install -r requirements.txt')
         if(ret_code != 0):
-            print('Requests installation failed.')
+            print('Requirements installation failed.')
             quit()
-        print('Requests has been installed, restart me!')
+        print('Requirements has been installed, restart me!')
         quit()
 except ImportError:
     print('This development isn\'t compatible with python2. Use python > 3.4 to run.')
